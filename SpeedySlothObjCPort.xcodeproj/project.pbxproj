@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B90C0C9C23BFDF20008DAD80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B90C0C9B23BFDF20008DAD80 /* AppDelegate.m */; };
+		B90C0C9F23BFDF20008DAD80 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B90C0C9E23BFDF20008DAD80 /* SceneDelegate.m */; };
+		B90C0CA223BFDF20008DAD80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B90C0CA123BFDF20008DAD80 /* ViewController.m */; };
+		B90C0CA523BFDF20008DAD80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C0CA323BFDF20008DAD80 /* Main.storyboard */; };
+		B90C0CA723BFDF21008DAD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90C0CA623BFDF21008DAD80 /* Assets.xcassets */; };
+		B90C0CAA23BFDF21008DAD80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C0CA823BFDF21008DAD80 /* LaunchScreen.storyboard */; };
+		B90C0CAD23BFDF21008DAD80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B90C0CAC23BFDF21008DAD80 /* main.m */; };
+		B90C0CB123BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B90C0CB023BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B90C0CB723BFDF21008DAD80 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C0CB523BFDF21008DAD80 /* Interface.storyboard */; };
+		B90C0CB923BFDF22008DAD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90C0CB823BFDF22008DAD80 /* Assets.xcassets */; };
+		B90C0CC023BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B90C0CBF23BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B90C0CC623BFDF22008DAD80 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B90C0CC523BFDF22008DAD80 /* InterfaceController.m */; };
+		B90C0CC923BFDF22008DAD80 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B90C0CC823BFDF22008DAD80 /* ExtensionDelegate.m */; };
+		B90C0CCC23BFDF22008DAD80 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B90C0CCB23BFDF22008DAD80 /* NotificationController.m */; };
+		B90C0CCE23BFDF23008DAD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90C0CCD23BFDF23008DAD80 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B90C0CB223BFDF21008DAD80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B90C0C8F23BFDF20008DAD80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90C0CAF23BFDF21008DAD80;
+			remoteInfo = "SpeedySlothObjCPort WatchKit App";
+		};
+		B90C0CC123BFDF22008DAD80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B90C0C8F23BFDF20008DAD80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90C0CBE23BFDF22008DAD80;
+			remoteInfo = "SpeedySlothObjCPort WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B90C0CD623BFDF23008DAD80 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B90C0CC023BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C0CDA23BFDF23008DAD80 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B90C0CB123BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B90C0C9723BFDF20008DAD80 /* SpeedySlothObjCPort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedySlothObjCPort.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90C0C9A23BFDF20008DAD80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B90C0C9B23BFDF20008DAD80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B90C0C9D23BFDF20008DAD80 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B90C0C9E23BFDF20008DAD80 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B90C0CA023BFDF20008DAD80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B90C0CA123BFDF20008DAD80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B90C0CA423BFDF20008DAD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B90C0CA623BFDF21008DAD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B90C0CA923BFDF21008DAD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B90C0CAB23BFDF21008DAD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90C0CAC23BFDF21008DAD80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B90C0CB023BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpeedySlothObjCPort WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90C0CB623BFDF21008DAD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B90C0CB823BFDF22008DAD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B90C0CBA23BFDF22008DAD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90C0CBF23BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SpeedySlothObjCPort WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90C0CC423BFDF22008DAD80 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		B90C0CC523BFDF22008DAD80 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		B90C0CC723BFDF22008DAD80 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		B90C0CC823BFDF22008DAD80 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		B90C0CCA23BFDF22008DAD80 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		B90C0CCB23BFDF22008DAD80 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		B90C0CCD23BFDF23008DAD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B90C0CCF23BFDF23008DAD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90C0CD023BFDF23008DAD80 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B90C0C9423BFDF20008DAD80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C0CBC23BFDF22008DAD80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B90C0C8E23BFDF20008DAD80 = {
+			isa = PBXGroup;
+			children = (
+				B90C0C9923BFDF20008DAD80 /* SpeedySlothObjCPort */,
+				B90C0CB423BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App */,
+				B90C0CC323BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension */,
+				B90C0C9823BFDF20008DAD80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B90C0C9823BFDF20008DAD80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B90C0C9723BFDF20008DAD80 /* SpeedySlothObjCPort.app */,
+				B90C0CB023BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App.app */,
+				B90C0CBF23BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B90C0C9923BFDF20008DAD80 /* SpeedySlothObjCPort */ = {
+			isa = PBXGroup;
+			children = (
+				B90C0C9A23BFDF20008DAD80 /* AppDelegate.h */,
+				B90C0C9B23BFDF20008DAD80 /* AppDelegate.m */,
+				B90C0C9D23BFDF20008DAD80 /* SceneDelegate.h */,
+				B90C0C9E23BFDF20008DAD80 /* SceneDelegate.m */,
+				B90C0CA023BFDF20008DAD80 /* ViewController.h */,
+				B90C0CA123BFDF20008DAD80 /* ViewController.m */,
+				B90C0CA323BFDF20008DAD80 /* Main.storyboard */,
+				B90C0CA623BFDF21008DAD80 /* Assets.xcassets */,
+				B90C0CA823BFDF21008DAD80 /* LaunchScreen.storyboard */,
+				B90C0CAB23BFDF21008DAD80 /* Info.plist */,
+				B90C0CAC23BFDF21008DAD80 /* main.m */,
+			);
+			path = SpeedySlothObjCPort;
+			sourceTree = "<group>";
+		};
+		B90C0CB423BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B90C0CB523BFDF21008DAD80 /* Interface.storyboard */,
+				B90C0CB823BFDF22008DAD80 /* Assets.xcassets */,
+				B90C0CBA23BFDF22008DAD80 /* Info.plist */,
+			);
+			path = "SpeedySlothObjCPort WatchKit App";
+			sourceTree = "<group>";
+		};
+		B90C0CC323BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B90C0CC423BFDF22008DAD80 /* InterfaceController.h */,
+				B90C0CC523BFDF22008DAD80 /* InterfaceController.m */,
+				B90C0CC723BFDF22008DAD80 /* ExtensionDelegate.h */,
+				B90C0CC823BFDF22008DAD80 /* ExtensionDelegate.m */,
+				B90C0CCA23BFDF22008DAD80 /* NotificationController.h */,
+				B90C0CCB23BFDF22008DAD80 /* NotificationController.m */,
+				B90C0CCD23BFDF23008DAD80 /* Assets.xcassets */,
+				B90C0CCF23BFDF23008DAD80 /* Info.plist */,
+				B90C0CD023BFDF23008DAD80 /* PushNotificationPayload.apns */,
+			);
+			path = "SpeedySlothObjCPort WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B90C0C9623BFDF20008DAD80 /* SpeedySlothObjCPort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B90C0CDB23BFDF23008DAD80 /* Build configuration list for PBXNativeTarget "SpeedySlothObjCPort" */;
+			buildPhases = (
+				B90C0C9323BFDF20008DAD80 /* Sources */,
+				B90C0C9423BFDF20008DAD80 /* Frameworks */,
+				B90C0C9523BFDF20008DAD80 /* Resources */,
+				B90C0CDA23BFDF23008DAD80 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B90C0CB323BFDF21008DAD80 /* PBXTargetDependency */,
+			);
+			name = SpeedySlothObjCPort;
+			productName = SpeedySlothObjCPort;
+			productReference = B90C0C9723BFDF20008DAD80 /* SpeedySlothObjCPort.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B90C0CAF23BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B90C0CD723BFDF23008DAD80 /* Build configuration list for PBXNativeTarget "SpeedySlothObjCPort WatchKit App" */;
+			buildPhases = (
+				B90C0CAE23BFDF21008DAD80 /* Resources */,
+				B90C0CD623BFDF23008DAD80 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B90C0CC223BFDF22008DAD80 /* PBXTargetDependency */,
+			);
+			name = "SpeedySlothObjCPort WatchKit App";
+			productName = "SpeedySlothObjCPort WatchKit App";
+			productReference = B90C0CB023BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B90C0CBE23BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B90C0CD323BFDF23008DAD80 /* Build configuration list for PBXNativeTarget "SpeedySlothObjCPort WatchKit Extension" */;
+			buildPhases = (
+				B90C0CBB23BFDF22008DAD80 /* Sources */,
+				B90C0CBC23BFDF22008DAD80 /* Frameworks */,
+				B90C0CBD23BFDF22008DAD80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpeedySlothObjCPort WatchKit Extension";
+			productName = "SpeedySlothObjCPort WatchKit Extension";
+			productReference = B90C0CBF23BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B90C0C8F23BFDF20008DAD80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "The Life of a Demoniac";
+				TargetAttributes = {
+					B90C0C9623BFDF20008DAD80 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					B90C0CAF23BFDF21008DAD80 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					B90C0CBE23BFDF22008DAD80 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = B90C0C9223BFDF20008DAD80 /* Build configuration list for PBXProject "SpeedySlothObjCPort" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B90C0C8E23BFDF20008DAD80;
+			productRefGroup = B90C0C9823BFDF20008DAD80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B90C0C9623BFDF20008DAD80 /* SpeedySlothObjCPort */,
+				B90C0CAF23BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App */,
+				B90C0CBE23BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B90C0C9523BFDF20008DAD80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90C0CAA23BFDF21008DAD80 /* LaunchScreen.storyboard in Resources */,
+				B90C0CA723BFDF21008DAD80 /* Assets.xcassets in Resources */,
+				B90C0CA523BFDF20008DAD80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C0CAE23BFDF21008DAD80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90C0CB923BFDF22008DAD80 /* Assets.xcassets in Resources */,
+				B90C0CB723BFDF21008DAD80 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C0CBD23BFDF22008DAD80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90C0CCE23BFDF23008DAD80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B90C0C9323BFDF20008DAD80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90C0CA223BFDF20008DAD80 /* ViewController.m in Sources */,
+				B90C0C9C23BFDF20008DAD80 /* AppDelegate.m in Sources */,
+				B90C0CAD23BFDF21008DAD80 /* main.m in Sources */,
+				B90C0C9F23BFDF20008DAD80 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90C0CBB23BFDF22008DAD80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90C0CC923BFDF22008DAD80 /* ExtensionDelegate.m in Sources */,
+				B90C0CC623BFDF22008DAD80 /* InterfaceController.m in Sources */,
+				B90C0CCC23BFDF22008DAD80 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B90C0CB323BFDF21008DAD80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B90C0CAF23BFDF21008DAD80 /* SpeedySlothObjCPort WatchKit App */;
+			targetProxy = B90C0CB223BFDF21008DAD80 /* PBXContainerItemProxy */;
+		};
+		B90C0CC223BFDF22008DAD80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B90C0CBE23BFDF22008DAD80 /* SpeedySlothObjCPort WatchKit Extension */;
+			targetProxy = B90C0CC123BFDF22008DAD80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B90C0CA323BFDF20008DAD80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B90C0CA423BFDF20008DAD80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B90C0CA823BFDF21008DAD80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B90C0CA923BFDF21008DAD80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B90C0CB523BFDF21008DAD80 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B90C0CB623BFDF21008DAD80 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B90C0CD123BFDF23008DAD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B90C0CD223BFDF23008DAD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B90C0CD423BFDF23008DAD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9987K9442;
+				INFOPLIST_FILE = "SpeedySlothObjCPort WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blogspot.demonicactivity.bush.alan.james.SpeedySlothObjCPort.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		B90C0CD523BFDF23008DAD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9987K9442;
+				INFOPLIST_FILE = "SpeedySlothObjCPort WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blogspot.demonicactivity.bush.alan.james.SpeedySlothObjCPort.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		B90C0CD823BFDF23008DAD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9987K9442;
+				IBSC_MODULE = SpeedySlothObjCPort_WatchKit_Extension;
+				INFOPLIST_FILE = "SpeedySlothObjCPort WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blogspot.demonicactivity.bush.alan.james.SpeedySlothObjCPort.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		B90C0CD923BFDF23008DAD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9987K9442;
+				IBSC_MODULE = SpeedySlothObjCPort_WatchKit_Extension;
+				INFOPLIST_FILE = "SpeedySlothObjCPort WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blogspot.demonicactivity.bush.alan.james.SpeedySlothObjCPort.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		B90C0CDC23BFDF23008DAD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9987K9442;
+				INFOPLIST_FILE = SpeedySlothObjCPort/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blogspot.demonicactivity.bush.alan.james.SpeedySlothObjCPort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B90C0CDD23BFDF23008DAD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9987K9442;
+				INFOPLIST_FILE = SpeedySlothObjCPort/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blogspot.demonicactivity.bush.alan.james.SpeedySlothObjCPort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B90C0C9223BFDF20008DAD80 /* Build configuration list for PBXProject "SpeedySlothObjCPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90C0CD123BFDF23008DAD80 /* Debug */,
+				B90C0CD223BFDF23008DAD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B90C0CD323BFDF23008DAD80 /* Build configuration list for PBXNativeTarget "SpeedySlothObjCPort WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90C0CD423BFDF23008DAD80 /* Debug */,
+				B90C0CD523BFDF23008DAD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B90C0CD723BFDF23008DAD80 /* Build configuration list for PBXNativeTarget "SpeedySlothObjCPort WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90C0CD823BFDF23008DAD80 /* Debug */,
+				B90C0CD923BFDF23008DAD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B90C0CDB23BFDF23008DAD80 /* Build configuration list for PBXNativeTarget "SpeedySlothObjCPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90C0CDC23BFDF23008DAD80 /* Debug */,
+				B90C0CDD23BFDF23008DAD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B90C0C8F23BFDF20008DAD80 /* Project object */;
+}
